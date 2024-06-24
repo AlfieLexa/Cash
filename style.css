@@ -1,0 +1,161 @@
+/* General body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: palegreen; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    outline: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50; 
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    border: none;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-section button:hover {
+    background: #45a049;
+}
+
+.cart-section {
+    margin-top: 20px;
+}
+
+.cart-section h2 {
+    color: #4CAF50; 
+}
+
+.cart-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-section th, .cart-section td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.cart-section th {
+    background-color: #f2f2f2;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    background: #ff4d4d; 
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+}
+
+.total-section {
+    margin-top: 20px;
+}
+
+.total-section h3 {
+    color: #4CAF50; 
+}
+
+.payment-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-section input {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.payment-section button {
+    padding: 10px 20px;
+    border: none;
+    background: #ffc107;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.payment-section button:hover {
+    background: #e0a800;
+}
+
+.complete-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .input-section input, .payment-section input {
+        width: 100%; 
+        margin-right: 0;
+    }
+    .input-section {
+        flex-direction: column; 
+    }
+    .payment-section {
+        flex-direction: column; 
+    }
+    .payment-section button {
+        width: 100%; 
+    }
+}
